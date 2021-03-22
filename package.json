@@ -1,6 +1,6 @@
 {
-  "name": "qbi-dev-tools",
-  "version": "1.0.7",
+  "name": "create-qbi-app",
+  "version": "0.0.1",
   "description": "Command line tool for developing component for Quick BI",
   "author": "Quick BI",
   "license": "MIT",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wloscar/qbi-dev-tools.git"
+    "url": "https://github.com/haili042/create-qbi-app"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
