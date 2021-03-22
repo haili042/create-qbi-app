@@ -5,7 +5,7 @@
   "author": "Quick BI",
   "license": "MIT",
   "bin": {
-    "qbi": "bin/qbi.js"
+    "cqa": "bin/cqa.js"
   },
   "scripts": {
     "prepublishOnly": "yarn version",
