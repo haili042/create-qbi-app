@@ -1,2 +1,2 @@
-# create-qbi-app
+# qbi-dev-tools
 for quick-bi developers
