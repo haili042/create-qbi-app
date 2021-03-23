@@ -1,12 +1,15 @@
 {
   "name": "create-qbi-app",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "Command line tool for developing component for Quick BI",
   "author": "Quick BI",
   "license": "MIT",
   "scripts": {
     "prepublishOnly": "yarn version",
     "postpublish": "git push --tag"
+  },
+  "bin": {
+    "create-qbi-app": "./bin/index.js"
   },
   "repository": {
     "type": "git",
