@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const program = require('commander');
-
+const { generateTemplate } = require('./create');
 const packageJson = require('../package.json');
 
 program.version(
@@ -9,12 +9,9 @@ program.version(
   'output the current version',
 );
 
-program
-  .command('create <project_name>', 'create a qbi component project')
-  .command('start', 'start the demo project')
-  .command('build', 'build the demo project')
-  .command('pack', 'pack the demo project');
 program.parse(process.argv);
+
+generateTemplate();
 
 if (!program.args.length) {
   program.help();
