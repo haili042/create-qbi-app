@@ -19,10 +19,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "chalk": "3.0.0",
     "commander": "6.2.0",
-    "inquirer": "^7.3.3",
-    "lodash.get": "^4.4.2",
     "rimraf": "^2.6.1"
   }
 }
