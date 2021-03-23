@@ -1,6 +1,6 @@
 {
   "name": "create-qbi-app",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1-beta",
   "description": "Command line tool for developing component for Quick BI",
   "author": "Quick BI",
   "license": "MIT",
