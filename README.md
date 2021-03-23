@@ -7,7 +7,7 @@ Create Quick-BI custom components with no build configuration.
 3 ways for you to getting start:
 ### npm
 ```
-npm qbi-app my-app
+npm init qbi-app my-app
 cd my-app
 npm i
 npm run start
