@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 const program = require('commander');
 const { generateTemplate } = require('./create');
 const packageJson = require('../package.json');

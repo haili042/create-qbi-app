@@ -12,6 +12,9 @@ const {
 const logger = require('./utils/logger');
 const get = require('lodash.get');
 
+/**
+ * 从 git 仓库拉取模板代码并写入目标目录
+ */
 function generateTemplate() {
   const options = process.argv;
   program.parse(options);

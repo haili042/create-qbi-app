@@ -3,6 +3,7 @@ const path = require('path');
 const cwd = process.cwd();
 const logger = require('./logger');
 
+// 参数错误时退出程序
 function exitWhenInvalid(value, validators = []) {
   let errorMsg;
   validators.find(validator => {
