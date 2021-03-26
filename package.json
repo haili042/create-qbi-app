@@ -1,25 +1,41 @@
 {
-  "name": "create-qbi-app",
-  "version": "0.0.1",
-  "description": "Command line tool for developing component for Quick BI",
-  "author": "Quick BI",
-  "license": "MIT",
+  "name": "bi-component",
+  "version": "1.0.0",
+  "author": "Write your name here",
+  "description": "",
   "scripts": {
-    "prepublishOnly": "yarn version",
-    "postpublish": "git push --tag"
+    "pack": "cross-env npm run build && qbi pack",
+    "start": "cross-env NODE_ENV=development qbi start",
+    "build": "cross-env NODE_ENV=production qbi build",
+    "lint": "cross-env eslint ./src ./public --fix"
   },
-  "bin": {
-    "create-qbi-app": "./bin/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/haili042/create-qbi-app"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.168",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "antd": "^3.21.2",
+    "create-react-app": "^4.0.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "qbi-dev-tools": "^1.0.7",
+    "react-draggable": "^4.4.3",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "ui-schema-editors": "^0.0.5",
+    "ui-schema-lite": "^0.0.4"
   },
   "dependencies": {
-    "commander": "6.2.0",
-    "rimraf": "^2.6.1"
-  }
+    "bi-open-sdk": "^2.0.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,4 +1,3 @@
-node_modules
 /node_modules
 /.cache
 /.vscode
@@ -9,10 +8,5 @@ node_modules
 /.nyc_output
 /npm-debug.log
 /.node
-/dist
-/declaration
-/build
-/.tmp
-/*.tgz
-/*.zip
-yarn-error.log
+/tests
+/packages

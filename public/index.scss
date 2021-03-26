@@ -1,0 +1,45 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  height: 100%;
+
+  .demo-layout {
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+    grid-template-areas:
+      'action action'
+      'canvas setting';
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 400px;
+
+    .demo-action-panel {
+      grid-area: action;
+      display: flex;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .demo-setting-panel {
+      grid-area: setting;
+      display: flex;
+      border-left: 1px solid #ddd;
+    }
+
+    .demo-canvas-panel {
+      grid-area: canvas;
+      display: flex;
+      background-color: #ebeaef;
+      padding: 5px;
+    }
+  }
+}
