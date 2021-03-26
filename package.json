@@ -30,7 +30,7 @@
     "ui-schema-lite": "^0.0.4"
   },
   "dependencies": {
-    "bi-open-sdk": "^2.0.3"
+    "bi-open-react-sdk": "^2.0.1"
   },
   "browserslist": [
     ">0.2%",

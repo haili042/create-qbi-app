@@ -1,7 +1,7 @@
 /**
  * 导出组件的相关配置
  */
-import { Interfaces } from 'bi-open-sdk';
+import { Interfaces } from 'bi-open-react-sdk';
 
 const componentMeta: Interfaces.ComponentMeta = {
   propsSchema: {

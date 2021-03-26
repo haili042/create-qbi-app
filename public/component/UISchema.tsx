@@ -55,7 +55,7 @@ export const UISchema: React.FC<any> = React.memo(props => {
       editors={editors}
       data={props.data}
       schema={props.schema}
-      onChange={props.handleChange}
+      onChange={props.onChange}
     ></UISchemaLite>
   );
 });
