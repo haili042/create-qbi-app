@@ -1,5 +1,5 @@
 /**
- * @flie 开放组件入口文件
+ * 自定义组件
  */
 import * as React from 'react';
 import { Interfaces, Utils } from 'bi-open-react-sdk';

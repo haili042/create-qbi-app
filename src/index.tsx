@@ -1,5 +1,5 @@
 /**
- * @flie 自定义组件入口文件
+ * 自定义组件入口文件
  */
 import { createBIComponent } from 'bi-open-react-sdk';
 import Component from './Component';
