@@ -1,5 +1,5 @@
 # create-qbi-app
-Quickly Create a Quick-BI custom components project. 
+Quickly Create a Quick-BI custom component project. 
 ## Quick start
 
 3 ways for you to getting start:
