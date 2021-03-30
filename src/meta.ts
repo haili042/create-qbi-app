@@ -1,5 +1,5 @@
 /**
- * 导出组件的相关配置
+ * 自定义组件元信息
  */
 import { Interfaces } from 'bi-open-sdk';
 
