@@ -1,8 +1,6 @@
 # create-qbi-app
-Create Quick-BI custom components with no build configuration.
-
-
-## Quick Overview
+Quickly Create a Quick-BI custom components project. 
+## Quick start
 
 3 ways for you to getting start:
 ### npm
@@ -28,3 +26,6 @@ cd my-app
 yarn
 yarn start
 ```
+
+## Next step
+Please refer to the [documentation](https://www.yuque.com/u2227425/ia1pn8/xaia8g) on how to develop Quick-BI custom components.
