@@ -42,7 +42,7 @@ class MyComponent {
       // 第一行数据
       const [firstRow] = data;
 
-      // 度量对应的列下标
+      // 数据每行的位置都是固定的, 通过建立数组下标与 fieldId 的映射关系, 方便通过 fieldId 取值
       const fieldColumnIndexMap: {
         [key: string]: number;
       } = firstRow.reduce(
@@ -78,6 +78,7 @@ class MyComponent {
       // 绘制图表
       this.chart.setOption({
         angleAxis: {
+          // 样式面板中配置的起始角度
           startAngle: viewConfig.display?.startAngle,
         },
         radiusAxis: {
@@ -90,11 +91,14 @@ class MyComponent {
         },
         tooltip: {
           trigger: 'item',
+          // 对深色主题的兼容
           textStyle: {
             color: viewConfig.chartSkin.key === 'black' ? '#fff' : '#333',
           },
           backgroundColor: viewConfig.chartSkin.key === 'black' ? '#222' : '#fff',
           extraCssText: 'box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);',
+
+          // 将 tooltips 显示的数据格式与字段里配置的数据格式对应上
           formatter: (param: any) => {
             const fieldSetting = fieldSettingMap[param.seriesId];
             const value = Utils.formatNumberWithConfig(param.value, fieldSetting?.numberFormat);
@@ -104,14 +108,17 @@ class MyComponent {
         },
         series,
         legend: {
+          // 样式面板中配置的是否显示图例
           show: viewConfig.display?.showLegend,
           data: legend,
           top: 10,
           padding: 0,
+          // 对深色主题的兼容
           textStyle: {
             color: viewConfig.chartSkin.key === 'black' ? '#fff' : '#333',
           },
         },
+        // 对深色主题的兼容
         textStyle: {
           color: viewConfig.chartSkin.key === 'black' ? '#fff' : '#333',
         },
@@ -128,11 +135,12 @@ class MyComponent {
     const dispatch = customProps.dispatch;
 
     if (typeof dispatch === 'function') {
+      // 下钻/联动/跳转事件
       this.chart.on('click', (serie: any) => {
         dispatch({
           type: 'select',
           payload: {
-            dataIndex: serie.dataIndex,
+            dataIndex: serie.dataIndex, // dataIndex 为所点击的行在 data 中的数组下标
           },
         });
       });
