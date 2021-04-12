@@ -21,7 +21,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "qbi-dev-tools": "^1.1.1",
+    "qbi-dev-tools": "^1.1.2",
     "react-draggable": "^4.4.3",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
@@ -30,7 +30,7 @@
     "ui-schema-lite": "^0.0.4"
   },
   "dependencies": {
-    "bi-open-react-sdk": "^2.0.1"
+    "bi-open-react-sdk": "^2.0.4"
   },
   "browserslist": [
     ">0.2%",

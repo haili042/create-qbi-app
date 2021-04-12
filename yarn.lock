@@ -1694,25 +1694,25 @@ batch@0.6.1:
   resolved "https://registry.npm.alibaba-inc.com/batch/download/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bi-open-react-sdk@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open-react-sdk/download/bi-open-react-sdk-2.0.1.tgz#35fd955b89a1e8a47a379316397140aedd6e201a"
-  integrity sha1-Nf2VW4mh6KR6N5MWOXFArt1uIBo=
+bi-open-react-sdk@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npm.alibaba-inc.com/bi-open-react-sdk/download/bi-open-react-sdk-2.0.4.tgz#177543e870ea1e6db6e4b0fb8985da4086b9437f"
+  integrity sha1-F3VD6HDqHm225LD7iYXaQIa5Q38=
   dependencies:
-    bi-open "2.0.2"
+    bi-open "2.0.9"
 
-bi-open@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open/download/bi-open-2.0.2.tgz#5f5f1020a00790ae9461f869b398fb21058ef3dd"
-  integrity sha1-X18QIKAHkK6UYfhps5j7IQWO890=
+bi-open@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.npm.alibaba-inc.com/bi-open/download/bi-open-2.0.9.tgz#9b06a5a8ecda6c91b00308694410037ec507c32e"
+  integrity sha1-mwalqOzabJGwAwhpRBADfsUHwy4=
   dependencies:
-    bi-types "2.0.2"
+    bi-types "2.0.10"
     big.js "5.2.2"
 
-bi-types@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npm.alibaba-inc.com/bi-types/download/bi-types-2.0.2.tgz#b36f1089e43c5954911e302a33607115ddbb50bd"
-  integrity sha1-s28QieQ8WVSRHjAqM2BxFd27UL0=
+bi-types@2.0.10:
+  version "2.0.10"
+  resolved "https://registry.npm.alibaba-inc.com/bi-types/download/bi-types-2.0.10.tgz#592b9ac648e9dd8cf96731d604c9154c58d0607d"
+  integrity sha1-WSuaxkjp3Yz5ZzHWBMkVTFjQYH0=
 
 bi-types@2.0.5:
   version "2.0.5"
@@ -5812,10 +5812,10 @@ q@^1.1.2:
   resolved "https://registry.npm.alibaba-inc.com/q/download/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
-qbi-dev-tools@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npm.alibaba-inc.com/qbi-dev-tools/download/qbi-dev-tools-1.1.1.tgz#5747be20b3c16b9f0408cb02d9952e7101fd0362"
-  integrity sha1-V0e+ILPBa58ECMsC2ZUucQH9A2I=
+qbi-dev-tools@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npm.alibaba-inc.com/qbi-dev-tools/download/qbi-dev-tools-1.1.2.tgz#ccb6c5bd84c27814d62e4b9837d9369365f2e952"
+  integrity sha1-zLbFvYTCeBTWLkuYN9k2k2Xy6VI=
   dependencies:
     "@babel/core" "7.9.0"
     "@babel/plugin-proposal-class-properties" "^7.13.0"

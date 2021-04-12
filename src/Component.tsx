@@ -2,7 +2,7 @@
  * 自定义组件
  */
 import * as React from 'react';
-import { Interfaces, Utils } from 'bi-open-react-sdk';
+import { Interfaces } from 'bi-open-react-sdk';
 import _ from 'lodash';
 import './index.scss';
 
