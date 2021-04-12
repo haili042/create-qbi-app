@@ -17,7 +17,6 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "antd": "^3.21.2",
-    "create-react-app": "^4.0.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.2.0",
