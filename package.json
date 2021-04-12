@@ -31,7 +31,7 @@
     "ui-schema-lite": "^0.0.4"
   },
   "dependencies": {
-    "bi-open-sdk": "^2.0.4"
+    "bi-open-sdk": "^2.0.7"
   },
   "browserslist": [
     ">0.2%",

@@ -2,7 +2,7 @@
  * 自定义组件
  */
 import * as echarts from 'echarts';
-import { Interfaces, Utils, I18n } from 'bi-open-sdk';
+import { Interfaces, I18n, formatNumberWithConfig } from 'bi-open-sdk';
 import './index.scss';
 
 // 国际化相关
@@ -101,7 +101,7 @@ class MyComponent {
           // 将 tooltips 显示的数据格式与字段里配置的数据格式对应上
           formatter: (param: any) => {
             const fieldSetting = fieldSettingMap[param.seriesId];
-            const value = Utils.formatNumberWithConfig(param.value, fieldSetting?.numberFormat);
+            const value = formatNumberWithConfig(param.value, fieldSetting?.numberFormat);
 
             return `${param.seriesName ?? t('暂无数据')}<br />${param.name}: ${param.marker}${value}`;
           },
