@@ -17,7 +17,6 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "antd": "^3.21.2",
-    "create-react-app": "^4.0.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -30,7 +29,8 @@
     "ui-schema-lite": "^0.0.4"
   },
   "dependencies": {
-    "bi-open-react-sdk": "^2.0.4"
+    "bi-open-react-sdk": "^2.0.4",
+    "vue": "^3.0.11"
   },
   "browserslist": [
     ">0.2%",
