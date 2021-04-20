@@ -2,7 +2,7 @@
 module.exports = {
   entry: {
     BIComponentMeta: './src/meta.ts',
-    BIComponent: './src/index.tsx',
+    BIComponent: './src/index.ts',
   },
   devServer: {
     port: 8001,

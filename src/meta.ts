@@ -1,7 +1,7 @@
 /**
  * 自定义组件元信息
  */
-import { Interfaces } from 'bi-open-react-sdk';
+import { Interfaces } from 'bi-open-vue-sdk';
 
 const componentMeta: Interfaces.ComponentMeta = {
   propsSchema: {
