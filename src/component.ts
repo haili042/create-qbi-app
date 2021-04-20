@@ -1,7 +1,7 @@
 /**
  * 自定义组件
  */
-import { Interfaces, Utils } from 'bi-open-sdk';
+import { Interfaces } from 'bi-open-sdk';
 import _ from 'lodash';
 import './index.scss';
 
