@@ -1,14 +1,19 @@
 {
-  "name": "bi-component",
-  "version": "1.0.0",
-  "author": "Write your name here",
+  "name": "qbi-open-demo-page",
+  "version": "0.0.1-beta",
+  "author": "haili042",
   "description": "",
   "scripts": {
-    "pack": "cross-env npm run build && qbi pack",
-    "start": "cross-env NODE_ENV=development qbi start",
-    "build": "cross-env NODE_ENV=production qbi build",
+    "prepublishOnly": "yarn version && npm run build",
+    "postpublish": "git push --tag & tnpm sync qbi-dev-tools",
+    "start": "cross-env NODE_ENV=development node ./scripts/start.js",
+    "build": "cross-env NODE_ENV=production node ./scripts/build.js",
     "lint": "cross-env eslint ./src ./public --fix"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/QbiDemoPage.js",
   "license": "ISC",
   "devDependencies": {
     "@types/lodash": "^4.14.168",
@@ -17,6 +22,7 @@
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "antd": "^3.21.2",
+    "bi-open-sdk": "^2.1.3",
     "cross-env": "^7.0.3",
     "eslint": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -27,9 +33,6 @@
     "redux-devtools-extension": "^2.13.9",
     "ui-schema-editors": "^0.0.5",
     "ui-schema-lite": "^0.0.4"
-  },
-  "dependencies": {
-    "bi-open-sdk": "^2.1.3"
   },
   "browserslist": [
     ">0.2%",
