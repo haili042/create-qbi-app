@@ -1,9 +1,7 @@
 /**
- * 自定义组件
+ * @flie 开放组件入口文件
  */
-import { Interfaces } from 'bi-open-sdk';
-import _ from 'lodash';
-import './index.scss';
+import { Interfaces, createBIComponent } from 'bi-open-sdk';
 
 class MyComponent {
   render(props: Interfaces.LifecycleProps<Interfaces.ComponentProps>) {
@@ -32,11 +30,13 @@ class MyComponent {
   }
 
   /**
-   * umount 生命周期, 在卸载时触发
+   * unmount 生命周期, 在卸载时触发
    */
-  umount(props: Interfaces.LifecycleProps<Interfaces.ComponentProps>) {
+  unmount(props: Interfaces.LifecycleProps<Interfaces.ComponentProps>) {
     console.log('trigger when component unmount');
   }
 }
 
-export default MyComponent;
+export const { bootstrap, mount, unmount, update } = createBIComponent({
+  element: MyComponent,
+});

@@ -1,11 +1,10 @@
 {
   "name": "qbi-open-demo-page",
-  "version": "0.0.1-beta",
+  "version": "0.0.1",
   "author": "haili042",
   "description": "",
   "scripts": {
-    "prepublishOnly": "yarn version && npm run build",
-    "postpublish": "git push --tag & tnpm sync qbi-dev-tools",
+    "prepublishOnly": "npm run build",
     "start": "cross-env NODE_ENV=development node ./scripts/start.js",
     "build": "cross-env NODE_ENV=production node ./scripts/build.js",
     "lint": "cross-env eslint ./src ./public --fix"
@@ -13,7 +12,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/QbiDemoPage.js",
+  "main": "./dist/index.js",
   "license": "ISC",
   "devDependencies": {
     "@types/lodash": "^4.14.168",
@@ -32,7 +31,9 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.9",
     "ui-schema-editors": "^0.0.5",
-    "ui-schema-lite": "^0.0.4"
+    "ui-schema-lite": "^0.0.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "browserslist": [
     ">0.2%",

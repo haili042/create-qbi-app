@@ -3,7 +3,6 @@ import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { useSelector, useDispatch, useStore, Provider } from 'react-redux';
 import { shallowEqualProp } from './utils';
-import { customProps } from './mock';
 
 export const initialAppState = {
   card: {
@@ -14,7 +13,7 @@ export const initialAppState = {
     canvasWidth: 0,
     canvasHeight: 0,
   },
-  customProps,
+  customProps: {},
   setting: {},
 };
 
@@ -122,12 +121,31 @@ export const useAppContext = (...selectors) => {
   };
 };
 
-export const App: React.FC = props => {
+export const App: React.FC<{ initState: any }> = props => {
   const [store, setStore] = React.useState(null);
 
   React.useEffect(() => {
-    setStore(createStore(reducer, initialAppState, composeByDevTools()));
-  }, []);
+    setStore(
+      createStore(
+        reducer,
+        {
+          card: {
+            ...initialAppState.card,
+            ...(props?.initState?.card ?? {}),
+          },
+          customProps: {
+            ...initialAppState.customProps,
+            ...(props?.initState?.customProps ?? {}),
+          },
+          setting: {
+            ...initialAppState.setting,
+            ...(props?.initState?.setting ?? {}),
+          },
+        },
+        composeByDevTools(),
+      ),
+    );
+  }, [props.initState]);
 
   if (store === null) {
     return null;

@@ -1,12 +1,12 @@
 import React from 'react';
+import { Interfaces } from 'bi-open-sdk';
 import { useAppContext } from '../context';
 
-const BIComponent = (window as any).BIComponent;
-
-export const Component: React.FC = React.memo(props => {
+export const Component: React.FC<{ biComponent: Interfaces.Lifecycle }> = React.memo(props => {
   const ref = React.useRef();
   const hasMounted = React.useRef(false);
-  const { width, height, customProps } = useAppContext(state => ({
+  const biComponent = props.biComponent;
+  const { width, height, customProps } = useAppContext((state: any) => ({
     customProps: state.customProps,
     width: state.card.width,
     height: state.card.height,
@@ -14,29 +14,29 @@ export const Component: React.FC = React.memo(props => {
 
   React.useEffect(() => {
     if (hasMounted.current) {
-      BIComponent.update({
+      biComponent.update({
         container: ref.current,
         customProps,
       });
     }
-  }, [customProps, width, height]);
+  }, [customProps, width, height, biComponent]);
 
   React.useEffect(() => {
     if (!hasMounted.current) {
       hasMounted.current = true;
-      BIComponent.mount({
+      biComponent.mount({
         container: ref.current,
         customProps,
       });
     }
 
     return () => {
-      BIComponent.unmount({
+      biComponent.unmount({
         container: ref.current,
         customProps,
       });
     };
-  }, []);
+  }, [biComponent]);
 
   return (
     <div

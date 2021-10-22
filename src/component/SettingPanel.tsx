@@ -1,13 +1,13 @@
 import React from 'react';
 import './SettingPanel.scss';
+import { Interfaces } from 'bi-open-sdk';
 import { useAppContext } from '../context';
 import { UISchema } from './UISchema';
 
-const BIComponentMeta = (window as any).BIComponentMeta.default;
-
-const styleSchema = BIComponentMeta.propsSchema.styleSchema;
-
-export const SettingPanel: React.FC = React.memo(props => {
+export const SettingPanel: React.FC<{
+  componentMeta: Interfaces.ComponentMeta;
+}> = React.memo(props => {
+  const styleSchema: any = props.componentMeta.propsSchema.styleSchema;
   const { viewConfig, setCustomPropsViewConfig } = useAppContext(state => ({
     viewConfig: state.customProps.viewConfig,
   }));

@@ -1,5 +1,5 @@
 /**
- * 自定义组件元信息
+ * 导出组件的相关配置
  */
 import { Interfaces } from 'bi-open-sdk';
 
@@ -57,7 +57,7 @@ const componentMeta: Interfaces.ComponentMeta = {
             queryAxis: 'row',
             rule: {
               type: 'dimension', // 维度还是计量,都可以接受为all
-              maxColNum: 1, // 最多允许的字段数
+              // maxColNum: 1, // 最多允许的字段数
               required: true, // 是否是更新图标必须字段
             },
             columnList: [],
@@ -68,7 +68,7 @@ const componentMeta: Interfaces.ComponentMeta = {
             queryAxis: 'column',
             rule: {
               type: 'measure', // 维度还是计量,都可以接受为all
-              maxColNum: 3, // 最多允许的字段数
+              // maxColNum: 3, // 最多允许的字段数
               required: true, // 是否是更新图标必须字段
             },
             columnList: [],
