@@ -2,10 +2,11 @@
   "parser": "@typescript-eslint/parser",
   "env": {
     "jest": true,
-    "browser": true
+    "browser": true,
+    "node": true
   },
-  "plugins": ["@typescript-eslint", "react-hooks"],
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:react-hooks/recommended"],
+  "plugins": ["@typescript-eslint"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "rules": {
     "@typescript-eslint/ban-ts-comment": 0,
     "@typescript-eslint/explicit-module-boundary-types": 0,

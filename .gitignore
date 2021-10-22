@@ -15,4 +15,6 @@ node_modules
 /.tmp
 /*.tgz
 /*.zip
+public/package.json
 yarn-error.log
+.temp
