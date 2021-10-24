@@ -1,4 +1,11 @@
 /* 为了保证打包产物的稳定性，目前仅仅开放devServer相关配置项 */
+const path = require('path');
+
+const certDir = path.resolve(__dirname, '.temp');
+const keyFile = path.resolve(certDir, 'dev.key');
+const certFile = path.resolve(certDir, 'dev.pem');
+
+
 module.exports = {
   entry: {
     BIComponentMeta: './src/meta.ts',
@@ -6,7 +13,10 @@ module.exports = {
   },
   devServer: {
     port: 8001,
-    https: true,
+    https: {
+      key: keyFile,
+      cert: certFile,
+    },
     host: '127.0.0.1',
   },
   externals: {
