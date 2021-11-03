@@ -1,4 +1,100 @@
-.test-component {
-  width: 100%;
-  height: 100%;
+.test-table {
+  &.black {
+    table {
+      thead {
+        background-color: #374462 !important;
+
+        th {
+          color: #949bab !important;
+          border-color: #25314c !important;
+        }
+      }
+
+      tbody {
+        td {
+          color: #dfe0e3 !important;
+          border-color: #25314c !important;
+        }
+        tr {
+          background-color: #18233c !important;
+        }
+        tr:nth-child(even) {
+          background-color: #1d2842 !important;
+        }
+      }
+    }
+  }
+
+  .rc-table-cell {
+    position: relative;
+
+    .test-table-head-wrap {
+      position: relative;
+      background-clip: padding-box;
+      padding: 2px 0px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .resize-handler {
+        position: absolute;
+        right: -5px;
+        bottom: 0;
+        z-index: 10000;
+        width: 10px;
+        height: 100%;
+        cursor: col-resize;
+      }
+    }
+  }
+
+  .resize-edge {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-left: 1px dashed #444;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      border-radius: 0;
+      background-color: #cbd0df;
+
+      th {
+        font-weight: 400;
+        text-align: center;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+
+    tbody {
+      td {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 2px 8px;
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        height: 24px;
+        line-height: 24px;
+      }
+      tr {
+        background-color: #f9fafb;
+      }
+      tr:nth-child(even) {
+        background-color: #eef1f5;
+      }
+    }
+  }
 }

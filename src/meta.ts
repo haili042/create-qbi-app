@@ -12,23 +12,27 @@ const componentMeta: Interfaces.ComponentMeta = {
         props: { mode: 'collapse' },
         properties: {
           // 请在此处填写你需要自定义的属性
-          fruit: {
+          display: {
             type: 'object',
+            title: '显示设置',
             properties: {
-              apple: {
+              showLegend: {
                 type: 'switch',
+                id: 'showLegend',
                 defaultValue: true,
                 props: {
                   mode: 'checkbox',
-                  label: '苹果',
+                  label: '显示图例',
                 },
               },
-              banana: {
-                title: '香蕉',
+              startAngle: {
+                title: '其实角度',
+                id: 'startAngle',
                 type: 'number',
-                defaultValue: 1,
+                defaultValue: 0,
                 props: {
-                  maxLength: 20,
+                  placeholder: '请输出起始角度',
+                  maxLength: 140,
                 },
               },
             },
@@ -43,8 +47,9 @@ const componentMeta: Interfaces.ComponentMeta = {
           name: '钻取/维度',
           queryAxis: 'drill',
           rule: {
-            fieldTypes: ['dimension'],
-            required: false,
+            fieldTypes: ['dimension'], // 维度还是计量,都可以接受为all
+            // required: false, // 是否是更新图表必须字段
+            /** 限制数量 */
             maxColNum: 6,
           },
         },
@@ -54,7 +59,7 @@ const componentMeta: Interfaces.ComponentMeta = {
           queryAxis: 'row',
           rule: {
             fieldTypes: ['dimension'], // 维度还是计量,都可以接受为all
-            maxColNum: 1, // 最多允许的字段数
+            // maxColNum: 1, // 最多允许的字段数
             required: true, // 是否是更新图标必须字段
           },
         },
@@ -63,10 +68,9 @@ const componentMeta: Interfaces.ComponentMeta = {
           name: '度量',
           queryAxis: 'column',
           rule: {
-            fieldTypes: ['measure', 'dimension'],
-            // fieldGroupTypes: ['dimensionGroup'],
-            maxColNum: 3,
-            required: true,
+            fieldTypes: ['measure'], // 维度还是计量,都可以接受为all
+            // maxColNum: 3, // 最多允许的字段数
+            required: true, // 是否是更新图标必须字段
           },
         },
         {
@@ -74,11 +78,12 @@ const componentMeta: Interfaces.ComponentMeta = {
           name: '过滤器', //  名称
           queryAxis: 'filters',
           rule: {
-            fieldTypes: ['dimension', 'measure'],
+            fieldTypes: ['measure', 'dimension'],
             required: false,
           },
         },
       ],
+      /** 限制条数 */
       resultDisplay: {
         upLimit: 1000,
       },
