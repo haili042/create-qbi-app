@@ -29,6 +29,7 @@ class MyComponent {
       const dataConfig = customProps.dataConfig;
       const viewConfig = customProps.viewConfig;
       const fieldSettingMap = viewConfig.fieldSettingMap;
+      const formatCategory  = viewConfig?.formatCategory;
 
       // 主题颜色
       const colorSeries = customProps.viewConfig?.chartColorSeries?.colors ?? [];
@@ -73,7 +74,12 @@ class MyComponent {
 
       // meta 中限制了只有一个维度
       const [onlyRow] = rowFields;
-      const category = data.map(row => row[fieldColumnIndexMap[onlyRow?.fieldId]]?.value);
+      const category = data.map(row => {
+        const value = row[fieldColumnIndexMap[onlyRow?.fieldId]]?.value;
+        const { dimGranularity, timeFormat } = onlyRow || {};
+
+        return formatCategory ? formatCategory(dimGranularity, timeFormat, value) : value;
+      });
 
       // 绘制图表
       this.chart.setOption({
