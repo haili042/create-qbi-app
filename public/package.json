@@ -33,5 +33,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "webpack": {
+    "externals": {
+      "lodash": "_",
+      "react": "React",
+      "react-dom": "ReactDOM",
+      "moment": "moment"
+    }
+  },
+  "revisalInfo": {
+    "version": "4.1"
+  }
 }
