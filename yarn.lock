@@ -1657,27 +1657,27 @@ batch@0.6.1:
   resolved "https://registry.npm.alibaba-inc.com/batch/download/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bi-open-sdk@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open-sdk/download/bi-open-sdk-3.1.4.tgz#574c98fdfbe3290b664b3524f2a6a0400dd9de30"
-  integrity sha1-V0yY/fvjKQtmSzUk8qagQA3Z3jA=
+bi-open-sdk@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/bi-open-sdk/-/bi-open-sdk-3.1.5.tgz#b5be6ddc6ac48d75d1343a91f193e7744173c1fd"
+  integrity sha512-1Ume8ZCa+JfZFFEi9bV2uMm8sqVLC+Xyqd/O3sM5TjWrYkbY6jIuTdBwhoWMPYb0RalbQ+TA2E9kzshyVsv6+g==
   dependencies:
-    bi-open "^3.0.17"
+    bi-open "^3.0.18"
 
-bi-open@^3.0.17:
-  version "3.0.17"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open/download/bi-open-3.0.17.tgz#8d805df696a9ebd4959312f1c3f73da6f466bfb3"
-  integrity sha1-jYBd9pap69SVkxLxw/c9pvRmv7M=
+bi-open@^3.0.18:
+  version "3.0.18"
+  resolved "https://registry.yarnpkg.com/bi-open/-/bi-open-3.0.18.tgz#2df08ef1af4a827e662b1a3135a6dd1755db2728"
+  integrity sha512-87N8iPz9YFGFM2daA7jM0p4vo7amGz4/Ahj4VWa3atK7K9ZdymSD0lPaiedvZGQwrO42wbaAT2CRpOVSHLM46A==
   dependencies:
-    bi-types "^3.0.22"
+    bi-types "^3.0.23"
     big.js "5.2.2"
     compare-versions "3.4.0"
     moment "2.29.1"
 
-bi-types@^3.0.22:
-  version "3.0.22"
-  resolved "https://registry.npm.alibaba-inc.com/bi-types/download/bi-types-3.0.22.tgz#dc0ec025c99d8e47f14c6964b0dcdd78b3b98147"
-  integrity sha1-3A7AJcmdjkfxTGlksNzdeLO5gUc=
+bi-types@^3.0.23:
+  version "3.0.23"
+  resolved "https://registry.yarnpkg.com/bi-types/-/bi-types-3.0.23.tgz#38dda84f93e3abb58152b2bd7d5edbd54876ce68"
+  integrity sha512-T7Rnpw3QRgJ4cTYdu24Cyd84zX8TvRxkV3qUSsCoVarOOEMXCbc1yrtjlnJb3v7HjL9w3goyTeh95MvWEpDKww==
 
 big.js@5.2.2, big.js@^5.2.2:
   version "5.2.2"

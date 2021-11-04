@@ -29,7 +29,7 @@ class MyComponent {
       const dataConfig = customProps.dataConfig;
       const viewConfig = customProps.viewConfig;
       const fieldSettingMap = viewConfig.fieldSettingMap;
-      const formatCategory  = viewConfig?.formatCategory;
+      const { formatCategory } = customProps.utils || {};
 
       // 主题颜色
       const colorSeries = customProps.viewConfig?.chartColorSeries?.colors ?? [];
