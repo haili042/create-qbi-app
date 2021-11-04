@@ -2,7 +2,7 @@
  * 自定义组件
  */
 import * as echarts from 'echarts';
-import { Interfaces, I18n, formatNumberWithConfig } from 'bi-open-sdk';
+import { Interfaces, I18n } from 'bi-open-sdk';
 import './index.scss';
 
 // 国际化相关
@@ -29,7 +29,8 @@ class MyComponent {
       const dataConfig = customProps.dataConfig;
       const viewConfig = customProps.viewConfig;
       const fieldSettingMap = viewConfig.fieldSettingMap;
-      const { formatCategory } = customProps.utils || {};
+      const formatAllGranularityTime = customProps?.utils?.formatAllGranularityTime;
+      const formatNumberWithConfig = customProps?.utils?.formatNumberWithConfig;
 
       // 主题颜色
       const colorSeries = customProps.viewConfig?.chartColorSeries?.colors ?? [];
@@ -78,7 +79,7 @@ class MyComponent {
         const value = row[fieldColumnIndexMap[onlyRow?.fieldId]]?.value;
         const { dimGranularity, timeFormat } = onlyRow || {};
 
-        return formatCategory ? formatCategory(dimGranularity, timeFormat, value) : value;
+        return formatAllGranularityTime ? formatAllGranularityTime(dimGranularity, timeFormat, value) : value;
       });
 
       // 绘制图表

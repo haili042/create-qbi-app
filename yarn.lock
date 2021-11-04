@@ -1657,27 +1657,27 @@ batch@0.6.1:
   resolved "https://registry.npm.alibaba-inc.com/batch/download/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bi-open-sdk@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/bi-open-sdk/-/bi-open-sdk-3.1.5.tgz#b5be6ddc6ac48d75d1343a91f193e7744173c1fd"
-  integrity sha512-1Ume8ZCa+JfZFFEi9bV2uMm8sqVLC+Xyqd/O3sM5TjWrYkbY6jIuTdBwhoWMPYb0RalbQ+TA2E9kzshyVsv6+g==
+bi-open-sdk@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/bi-open-sdk/-/bi-open-sdk-3.1.6.tgz#cc6f7aafed15f9c8577eb03fee3422b13c9def67"
+  integrity sha512-NJdgDDtWNb4/8OXKwBwLqS0TUyf89no6nvmIjYC1KsI9ghTaIFzr6XxT+jCMxA9lB3ouQyKTB+tRMhpBsQ+UoA==
   dependencies:
-    bi-open "^3.0.18"
+    bi-open "^3.0.19"
 
-bi-open@^3.0.18:
-  version "3.0.18"
-  resolved "https://registry.yarnpkg.com/bi-open/-/bi-open-3.0.18.tgz#2df08ef1af4a827e662b1a3135a6dd1755db2728"
-  integrity sha512-87N8iPz9YFGFM2daA7jM0p4vo7amGz4/Ahj4VWa3atK7K9ZdymSD0lPaiedvZGQwrO42wbaAT2CRpOVSHLM46A==
+bi-open@^3.0.19:
+  version "3.0.19"
+  resolved "https://registry.yarnpkg.com/bi-open/-/bi-open-3.0.19.tgz#386b1ea12cd94bd181493538219bd23716460341"
+  integrity sha512-vGonytsg3/icO+dffoxo/efkvqkDK8jfEwrbaoYohw6xWmKCOuhtZL8ij1rFi+FCFyyhy59x0J4HipqyVbvEfQ==
   dependencies:
-    bi-types "^3.0.23"
+    bi-types "^3.0.24"
     big.js "5.2.2"
     compare-versions "3.4.0"
     moment "2.29.1"
 
-bi-types@^3.0.23:
-  version "3.0.23"
-  resolved "https://registry.yarnpkg.com/bi-types/-/bi-types-3.0.23.tgz#38dda84f93e3abb58152b2bd7d5edbd54876ce68"
-  integrity sha512-T7Rnpw3QRgJ4cTYdu24Cyd84zX8TvRxkV3qUSsCoVarOOEMXCbc1yrtjlnJb3v7HjL9w3goyTeh95MvWEpDKww==
+bi-types@^3.0.24:
+  version "3.0.24"
+  resolved "https://registry.yarnpkg.com/bi-types/-/bi-types-3.0.24.tgz#d453b17a802612c01d1f1d67fceba0cda4d536de"
+  integrity sha512-TopIM9XmZ59Pb3uO350UTyWAI4Q62fkFGjQc5S2dUQLV6JD8DRyQZvhPs1QzGjutY/1F32LlQlX5xh/el8Vc3g==
 
 big.js@5.2.2, big.js@^5.2.2:
   version "5.2.2"
