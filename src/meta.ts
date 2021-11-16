@@ -37,50 +37,55 @@ const componentMeta: Interfaces.ComponentMeta = {
       },
     },
     dataSchema: {
-      areas: [
-        {
-          id: 'drill',
-          name: '钻取/维度',
-          queryAxis: 'drill',
-          rule: {
-            fieldTypes: ['dimension'],
-            required: false,
-            maxColNum: 6,
+      schema: {
+        area: [
+          {
+            id: 'drill',
+            areaName: '钻取/维度',
+            queryAxis: 'drill',
+            rule: {
+              type: 'dimension', // 维度还是计量,都可以接受为all
+              required: false, // 是否是更新图表必须字段
+              /** 限制数量 */
+              maxColNum: 6,
+            },
+            columnList: [],
           },
-        },
-        {
-          id: 'area_row',
-          name: '维度',
-          queryAxis: 'row',
-          rule: {
-            fieldTypes: ['dimension'], // 维度还是计量,都可以接受为all
-            maxColNum: 1, // 最多允许的字段数
-            required: true, // 是否是更新图标必须字段
+          {
+            id: 'area_row',
+            areaName: '维度',
+            queryAxis: 'row',
+            rule: {
+              type: 'dimension', // 维度还是计量,都可以接受为all
+              maxColNum: 1, // 最多允许的字段数
+              required: true, // 是否是更新图标必须字段
+            },
+            columnList: [],
           },
-        },
-        {
-          id: 'area_column',
-          name: '度量',
-          queryAxis: 'column',
-          rule: {
-            fieldTypes: ['measure', 'dimension'],
-            // fieldGroupTypes: ['dimensionGroup'],
-            maxColNum: 3,
-            required: true,
+          {
+            id: 'area_column',
+            areaName: '度量',
+            queryAxis: 'column',
+            rule: {
+              type: 'measure', // 维度还是计量,都可以接受为all
+              maxColNum: 3, // 最多允许的字段数
+              required: true, // 是否是更新图标必须字段
+            },
+            columnList: [],
           },
-        },
-        {
-          id: 'filters',
-          name: '过滤器', //  名称
-          queryAxis: 'filters',
-          rule: {
-            fieldTypes: ['dimension', 'measure'],
-            required: false,
+          {
+            id: 'filters',
+            areaName: '过滤器', //  名称
+            queryAxis: 'filters',
+            rule: {
+              type: 'all',
+              required: false,
+            },
+            columnList: [],
           },
-        },
-      ],
-      resultDisplay: {
-        upLimit: 1000,
+        ],
+        /** 限制条数 */
+        limitNum: 1000,
       },
     },
   },
