@@ -1,5 +1,5 @@
 import 'qbi-open-demo-page/dist/index.css';
-import demo from 'qbi-open-demo-page';
+import * as demo from 'qbi-open-demo-page';
 import { initState } from './mock';
 
 demo.qbiDemoPageRender({
