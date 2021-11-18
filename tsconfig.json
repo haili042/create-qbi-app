@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "strictNullChecks": false,
+    "target": "es6",
+    "rootDir": "./src",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": false,
+    "lib": ["dom", "es5", "es6", "es7", "scripthost", "es2018.promise"],
+    "outDir": "./bin"
+  },
+  "exclude": ["node_modules", "bin"],
+  "ts-node": {
+    "transpileOnly": true, // It is faster to skip typechecking.
+    "maxOldSpaceSize": 16384
+  }
+}

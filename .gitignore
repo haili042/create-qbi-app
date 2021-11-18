@@ -13,6 +13,7 @@ node_modules
 /declaration
 /build
 /.tmp
+/bin
 /*.tgz
 /*.zip
 yarn-error.log

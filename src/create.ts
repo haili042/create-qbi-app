@@ -1,34 +1,37 @@
-const fs = require('fs');
-const rimraf = require('rimraf');
-const child_process = require('child_process');
-const logger = require('./utils/logger');
-const { FRAMEWORK_BRANCH, GIT } = require('./utils/config');
-const path = require('path');
+import * as fs from 'fs';
+import { execSync } from 'child_process';
+import logger from './utils/logger';
+import { GIT } from './utils/config';
+import * as path from 'path';
 
 const cwd = process.cwd();
-const execSync = child_process.execSync;
 
 /**
  * 从 git 仓库拉取模板代码并写入目标目录
  */
-function createApp(projectName, framework) {
-  const branch = FRAMEWORK_BRANCH[framework];
+export async function createApp(projectName: string, branch: string) {
   const cmd = `git clone --quiet --depth=1 --branch=${branch} ${GIT} ./${projectName}`;
 
   execSync(cmd);
 
-  logger.info(`Creating new ${framework} project "${projectName}" ...`);
+  logger.info(`Creating new project "${projectName}" ...`);
   logger.info(cmd);
 
   const projectPackage = path.resolve(cwd, `./${projectName}/package.json`);
 
   fs.readFile(projectPackage, 'utf8', function (err, data) {
     if (err) {
-      rimraf.sync(path.resolve(cwd, `./${projectName}`));
-      throw new Error(err);
+      fs.rmSync(path.resolve(cwd, `./${projectName}`), {
+        recursive: true,
+        force: true,
+      });
+      throw err;
     }
 
-    rimraf.sync(path.resolve(cwd, `./${projectName}/.git`));
+    fs.rmSync(path.resolve(cwd, `./${projectName}/.git`), {
+      recursive: true,
+      force: true,
+    });
 
     const json = JSON.parse(data);
     json.name = projectName;
@@ -41,7 +44,3 @@ function createApp(projectName, framework) {
     });
   });
 }
-
-module.exports = {
-  createApp,
-};

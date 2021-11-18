@@ -1,15 +1,15 @@
-function getLogText(args) {
+function getLogText(args: any[]) {
   return Array.from(args).join(' ');
 }
 
-class Logger {
+export default class Logger {
   /**
    * Outputs arguments with the "done" tag / colors
    *
    * @param {...*} arguments - arguments passed through to console.info
    */
-  static done(/* arguments */) {
-    console.info('\x1B[32m%s\x1B[0m', getLogText(arguments));
+  static done(...args: any[]) {
+    console.info('\x1B[32m%s\x1B[0m', getLogText(args));
   }
 
   /**
@@ -17,8 +17,8 @@ class Logger {
    *
    * @param {...*} arguments - arguments passed through to console.info
    */
-  static info(/* arguments */) {
-    console.info('\x1B[34m%s\x1B[0m', getLogText(arguments));
+  static info(...args: any[]) {
+    console.info('\x1B[34m%s\x1B[0m', getLogText(args));
   }
 
   /**
@@ -26,8 +26,8 @@ class Logger {
    *
    * @param {...*} arguments - arguments passed through to console.warn
    */
-  static warn(/* arguments */) {
-    console.warn('\x1B[33m%s\x1B[0m', getLogText(arguments));
+  static warn(...args: any[]) {
+    console.warn('\x1B[33m%s\x1B[0m', getLogText(args));
   }
 
   /**
@@ -35,9 +35,7 @@ class Logger {
    *
    * @param {...*} arguments - arguments passed through to console.error
    */
-  static error(/* arguments */) {
-    console.error('\x1B[31m%s\x1B[0m', getLogText(arguments));
+  static error(...args: any[]) {
+    console.error('\x1B[31m%s\x1B[0m', getLogText(args));
   }
 }
-
-module.exports = Logger;
