@@ -21,8 +21,7 @@
     "eslint": "^7.21.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "qbi-dev-tools": "^3.0.0",
-    "qbi-open-demo-page": "^0.0.1",
-    "react-draggable": "^4.4.3"
+    "qbi-open-demo-page": "^0.0.1"
   },
   "dependencies": {
     "bi-open-react-sdk": "^2.1.4"
