@@ -1750,27 +1750,34 @@ batch@0.6.1:
   resolved "https://registry.npm.alibaba-inc.com/batch/download/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bi-open-sdk@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open-sdk/download/bi-open-sdk-3.1.4.tgz#574c98fdfbe3290b664b3524f2a6a0400dd9de30"
-  integrity sha1-V0yY/fvjKQtmSzUk8qagQA3Z3jA=
+bi-open-menu-sdk@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npm.alibaba-inc.com/bi-open-menu-sdk/download/bi-open-menu-sdk-0.0.4.tgz#d0f2fea8790b07c7556d06247e92be548c54ab58"
+  integrity sha512-cIgEVZQxq2RFVnPx0fblmEbQe+HrFSDB8t4eo8DfjieMBpaAA7nho+8PQraAdxMusfTkqY3HU2TL2IqB4HqlOQ==
   dependencies:
-    bi-open "^3.0.17"
+    bi-open-react-sdk "^2.1.9"
 
-bi-open@^3.0.17:
-  version "3.0.17"
-  resolved "https://registry.npm.alibaba-inc.com/bi-open/download/bi-open-3.0.17.tgz#8d805df696a9ebd4959312f1c3f73da6f466bfb3"
-  integrity sha1-jYBd9pap69SVkxLxw/c9pvRmv7M=
+bi-open-react-sdk@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.npm.alibaba-inc.com/bi-open-react-sdk/download/bi-open-react-sdk-2.1.9.tgz#077795f768394aeca361e2c2da8a307d7bae905f"
+  integrity sha512-xqBcGlUl2SWiP2q+rtoDbhDrgGH/crg4D+jnP06VHI/UhPXE7Y/bZZfkrl0ESJkGJagMu6U76CVklPrdGuMKgA==
   dependencies:
-    bi-types "^3.0.22"
+    bi-open "^3.0.22"
+
+bi-open@^3.0.22:
+  version "3.0.22"
+  resolved "https://registry.npm.alibaba-inc.com/bi-open/download/bi-open-3.0.22.tgz#ce8a6171664a21b48cf1383f65a1e90794333a6f"
+  integrity sha512-w45bytDUZrMkrypknu6RQp/zoHbQjiBh6SYrBwkMq7b3JSvk73XOX7Lse8/ad/FrG/FORLn7Ugd7s+tAIwMD1A==
+  dependencies:
+    bi-types "^3.0.27"
     big.js "5.2.2"
     compare-versions "3.4.0"
     moment "2.29.1"
 
-bi-types@^3.0.22:
-  version "3.0.22"
-  resolved "https://registry.npm.alibaba-inc.com/bi-types/download/bi-types-3.0.22.tgz#dc0ec025c99d8e47f14c6964b0dcdd78b3b98147"
-  integrity sha1-3A7AJcmdjkfxTGlksNzdeLO5gUc=
+bi-types@^3.0.27:
+  version "3.0.27"
+  resolved "https://registry.npm.alibaba-inc.com/bi-types/download/bi-types-3.0.27.tgz#269744be3980a131d54a2f1f4ba9aa39bb54120d"
+  integrity sha512-LeYnwPoMoBYDTvgQT+oOI6SsMrdjhVJCb+zNLWqTr0eyBejrrtXdvZXfbIgHSAlgOQd+79ShLmOy4wrEeraUzw==
 
 big.js@5.2.2, big.js@^5.2.2:
   version "5.2.2"
@@ -5026,10 +5033,10 @@ punycode@^2.1.0:
   resolved "https://registry.npm.alibaba-inc.com/punycode/download/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
-qbi-dev-tools@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.alibaba-inc.com/qbi-dev-tools/download/qbi-dev-tools-3.0.0.tgz#9613f306d1708f8a18397aacb2aa7ccc72753d6c"
-  integrity sha1-lhPzBtFwj4oYOXqssqp8zHJ1PWw=
+qbi-dev-tools@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.alibaba-inc.com/qbi-dev-tools/download/qbi-dev-tools-3.0.1.tgz#60da2350ee4856cb43313772a710a5384a89c4ad"
+  integrity sha512-wzbyg81QaEflga++6wqfMPnuuOiobarVUfKbMYnv4HK9N1LUFDBQA3GhTh0Fuu7EoA3UPUsHOi3rntl/7KVO4w==
   dependencies:
     "@babel/core" "7.15.5"
     "@babel/plugin-proposal-class-properties" "^7.13.0"
@@ -5056,7 +5063,7 @@ qbi-dev-tools@^3.0.0:
     less-loader "5.0.0"
     lodash.merge "^4.6.2"
     mini-css-extract-plugin "^1.6.2"
-    qbi-mkcert "^1.1.0"
+    qbi-mkcert "^1.1.1"
     raw-loader "^4.0.2"
     sass "^1.32.5"
     sass-loader "^10.1.1"
@@ -5067,10 +5074,10 @@ qbi-dev-tools@^3.0.0:
     webpack-bundle-analyzer "^4.4.0"
     webpack-dev-server "^3.11.2"
 
-qbi-mkcert@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.alibaba-inc.com/qbi-mkcert/download/qbi-mkcert-1.1.0.tgz#d9be11a8712399d9f9aa221ea6bae6321bf0ad11"
-  integrity sha1-2b4RqHEjmdn5qiIeprrmMhvwrRE=
+qbi-mkcert@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.alibaba-inc.com/qbi-mkcert/download/qbi-mkcert-1.1.1.tgz#fd8ccb2ff098d0de3fee6d91a0253005a653e980"
+  integrity sha1-/YzLL/CY0N4/7m2RoCUwBaZT6YA=
 
 qbi-open-demo-page@^0.0.1:
   version "0.0.1"

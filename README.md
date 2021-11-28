@@ -1,6 +1,6 @@
-# Quick BI custom component demo
+# Quick BI custom menu demo
 
-这是一个 Quick BI 自定义组件
+这是一个 Quick BI 自定义菜单
 
 ## 常用命令
 
