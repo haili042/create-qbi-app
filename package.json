@@ -1,6 +1,6 @@
 {
   "name": "create-qbi-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line tool for developing component for Quick BI",
   "author": "Quick BI",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "watch": "tsc -w --sourceMap",
     "start": "ts-node -P ./tsconfig.json ./src/index.ts",
     "build": "rm -rf bin && rm -rf .cache && tsc",
-    "prepublishOnly": "yarn version",
+    "prepublishOnly": "npm run build && yarn version",
     "postpublish": "git push --tag"
   },
   "bin": {
