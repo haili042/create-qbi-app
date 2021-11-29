@@ -35,8 +35,8 @@ export const TEMPLATES: Template = [
   },
   new Separator('[custom menu]'),
   {
-    name: 'menu-dashboard-card',
-    value: 'template/menu-dashboard-card',
+    name: 'menu-chart-card',
+    value: 'template/menu-chart-card',
     description: 'Custom menu of dashboard card',
   },
   {
