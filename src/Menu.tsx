@@ -10,10 +10,12 @@ export const MyCardMenu: React.FC<Interfaces.MenuComponentExcelProps> = React.me
     [props],
   );
 
+  const className = props.pageConfig.mode === 'edit' ? 'custom-excel-menu-edit' : 'custom-excel-menu-preview';
+
   return (
     <MenuItem
       // 默认的自定义菜单组件
-      className="excel-menu-item"
+      className={className}
       title="自定义菜单"
       disabled={false}
       hoverTip="鼠标 hover 提示"
