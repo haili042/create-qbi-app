@@ -24,7 +24,7 @@
     "qbi-open-demo-page": "^0.0.1"
   },
   "dependencies": {
-    "bi-open-menu-sdk": "^0.0.6"
+    "bi-open-menu-sdk": "^0.0.7"
   },
   "browserslist": [
     ">0.2%",
