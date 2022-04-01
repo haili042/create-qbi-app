@@ -3,8 +3,6 @@
  */
 import { Interfaces } from 'bi-open-menu-sdk';
 
-const menuMeta: Interfaces.MenuMeta = {
-  
-};
+const menuMeta: Interfaces.MenuMeta = {};
 
 export default menuMeta;

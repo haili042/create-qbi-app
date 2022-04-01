@@ -1,32 +1,29 @@
 import * as React from 'react';
 import { Interfaces, MenuItem } from 'bi-open-menu-sdk';
+import { ModalContent } from './ModalContent';
 
 export const MyCardMenu: React.FC<Interfaces.MenuComponentChartProps> = React.memo(props => {
   // 点击事件
   const handleClick = React.useCallback(() => {
-    console.log('click');
     console.log('props', props);
     props.dispatch({
       type: 'openModal',
       payload: {
-        title: '我是标题',
-        content: <iframe src="https://www.yuque.com/u2227425/ia1pn8/nvg5q6" width="100%"></iframe>,
+        title: '弹窗标题',
+        content: <ModalContent text="这里是弹窗内容" />,
         onCancel: () => {
           console.log('关闭事件');
         },
         onOk: () => {
           console.log('确认事件');
           return new Promise((resolve, reject) => {
+            // 延时关闭
             setTimeout(Math.random() > 0.5 ? resolve : reject, 1000);
           }).catch(() => console.log('Oops errors!'));
         },
-        cancelText: '点我取消',
         okText: '前往',
         cancelButtonProps: {
           style: { display: 'none' },
-        },
-        okButtonProps: {
-          disabled: true,
         },
       },
     });
