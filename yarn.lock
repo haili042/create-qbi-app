@@ -1750,7 +1750,7 @@ batch@0.6.1:
   resolved "https://registry.npm.alibaba-inc.com/batch/download/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bi-open-menu-sdk@0.0.9:
+bi-open-menu-sdk@^0.0.9:
   version "0.0.9"
   resolved "https://registry.npm.alibaba-inc.com/bi-open-menu-sdk/download/bi-open-menu-sdk-0.0.9.tgz#e962e8d0671fb80bf86e0da0aa1aa3338a918527"
   integrity sha512-YS4d8X4knhzLIumXwc99rC1dT5HhZVJNsQ3He21DzRo1N9IDfBGfqQ3R0meQhliBeVz2xVnM4128ghGzIE9PLg==
