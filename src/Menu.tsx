@@ -36,6 +36,9 @@ export const MyCardMenu: React.FC<Interfaces.MenuComponentChartProps> = React.me
       disabled={false}
       loading={false}
       onClick={handleClick}
+      showTitle={true}
+      showIcon={true}
+      hoverTip="hoverTip"
     />
   );
 });
