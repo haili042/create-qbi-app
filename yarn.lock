@@ -1706,7 +1706,7 @@ batch@0.6.1:
   resolved "https://registry.npmmirror.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
 
-bi-open-sdk@^3.1.4:
+bi-open-sdk@^3.1.6:
   version "3.1.9"
   resolved "https://registry.npmmirror.com/bi-open-sdk/-/bi-open-sdk-3.1.9.tgz#b04364add60ad0bdb00e0940305d92cf160c4251"
   integrity sha512-fAeupwBcOTOB2pehOuOlIi9NyVGmO9B/8ApdHbTWD0gLU2zu+/ksRe9YC2qUn+kPEfVy1qF8/6ZOPDyp31AcIA==
