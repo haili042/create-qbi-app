@@ -1694,34 +1694,34 @@ batch@0.6.1:
   resolved "https://registry.npmmirror.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw==
 
-bi-open-menu-sdk@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.npmmirror.com/bi-open-menu-sdk/-/bi-open-menu-sdk-0.0.7.tgz#d9bde3dd300f78b0b7679462f296f6b0af7df1ac"
-  integrity sha512-VmdR/LR3YSMkQAvNFYZ3GmXwgiqBU2pXrubX7vnigTkxtyeLWqzplVfUx6ZpXmhLemNilIzwHaNJT/tk3YaonQ==
+bi-open-menu-sdk@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.npmmirror.com/bi-open-menu-sdk/-/bi-open-menu-sdk-0.0.10.tgz#bcd84831a768f9a25a5627765fd9689c99f3901b"
+  integrity sha512-7Qvn+lJjbn2iaMk1Zaq7Hx3hRoI1pkcq//nnFScOujO9ZGxndUP7WL6zIx36FtKCyHBMrdcxK24eFMkRxxnrfw==
   dependencies:
-    bi-open-react-sdk "^2.1.12"
+    bi-open-react-sdk "^2.1.15"
 
-bi-open-react-sdk@^2.1.12:
-  version "2.1.14"
-  resolved "https://registry.npmmirror.com/bi-open-react-sdk/-/bi-open-react-sdk-2.1.14.tgz#fd54811acea3a27963771c78b86bb562b29a9126"
-  integrity sha512-IyiBpW8QnCGWh0gy6vPJJKGgKMy0hnxPL98xmCHzxFak6nkp2ghHtvaZfSMoZGgLb86x6dP137f+5YaIHZrF0g==
+bi-open-react-sdk@^2.1.15:
+  version "2.1.15"
+  resolved "https://registry.npmmirror.com/bi-open-react-sdk/-/bi-open-react-sdk-2.1.15.tgz#580873efa50601a7e38fc5e7185eb37a746f3f05"
+  integrity sha512-jIchHFNg7hie3LR3/5amFL5a9iU2u8wDjGlvr9StENRIpXfxFL+rEnaQTw8qofpZW6XNEbeKKsUxjTpQTL1trw==
   dependencies:
-    bi-open "^3.0.27"
+    bi-open "^3.0.28"
 
-bi-open@^3.0.27:
-  version "3.0.27"
-  resolved "https://registry.npmmirror.com/bi-open/-/bi-open-3.0.27.tgz#39cbef5c191ab8f017f1ff07b916424d9121e350"
-  integrity sha512-LlfJ6aoWiJ8/JEdlJAWlPG40mbo/w9P4cXj2FoPro2gmmVTnBsM5+XWMGDTyc1lSkm5Zqo69KTOt29d+NhiLkw==
+bi-open@^3.0.28:
+  version "3.0.28"
+  resolved "https://registry.npmmirror.com/bi-open/-/bi-open-3.0.28.tgz#a51463f9f0cbce305d1f6b6e3e9cddc08803b3ce"
+  integrity sha512-YBUgS+2genTGodTSaod6tIKTrOGEynSe1mWhD0xkM8Iz+b2C+k3+ntPVfffwNWjwf2iwJUu9uH5KfGjjF6NA3A==
   dependencies:
-    bi-types "^3.0.38"
+    bi-types "^3.0.39"
     big.js "5.2.2"
     compare-versions "3.4.0"
     moment "2.29.1"
 
-bi-types@^3.0.38:
-  version "3.0.38"
-  resolved "https://registry.npmmirror.com/bi-types/-/bi-types-3.0.38.tgz#e5303a15ee8080c256301cc150f97cd884fb623a"
-  integrity sha512-QmNaWYieUNbqnyxjEvrqnJuWEoSBG42xImr0j3eqsHgXqm2fP8IB2yDQ3Y3dV7vi2PFZpKm9dLFJ7OjkbJtIKQ==
+bi-types@^3.0.39:
+  version "3.0.39"
+  resolved "https://registry.npmmirror.com/bi-types/-/bi-types-3.0.39.tgz#c729a0a0ddbf79bdf3437bdfcfc40b8e663e3b03"
+  integrity sha512-0c7PRVrCVEAXh4u5OmR3cFhRnmnphoCnpoUGv7ZNfSXBZUAAfVVTw9IskYHWqtYrIEPiafRAyc03TznUbUg4ZA==
 
 big.js@5.2.2, big.js@^5.2.2:
   version "5.2.2"
