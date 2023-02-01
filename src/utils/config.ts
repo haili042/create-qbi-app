@@ -44,6 +44,11 @@ export const TEMPLATES: Template = [
     value: 'template/menu-excel',
     description: 'Custom menu of web excel',
   },
+  {
+    name: 'menu-dashboard',
+    value: 'template/menu-dashboard',
+    description: 'Custom menu of dashboard',
+  },
 ];
 
 // legacy version v3.12 templates
