@@ -50,7 +50,7 @@ class CustomElement extends React.Component<{
 
 const App: React.FC = () => {
   return (
-    <div style={{ marginTop: 100, marginLeft: 100, border: '1px solid #ddd', width: 200, height: 32 }}>
+    <div style={{ marginTop: 100, marginLeft: 100, border: '1px solid #ddd', width: 200 }}>
       <CustomElement {...(window as any).BIComponent} />
     </div>
   );
