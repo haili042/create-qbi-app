@@ -24,7 +24,7 @@
     "qbi-open-demo-page": "^0.0.1"
   },
   "dependencies": {
-    "bi-open-react-sdk": "^2.1.4"
+    "bi-open-react-sdk": "^2.1.16"
   },
   "browserslist": [
     ">0.2%",
