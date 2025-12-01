@@ -1,3 +1,6 @@
+# Tips
+This repository has been migrated to [open-sdk](https://github.com/quick-bi/open-sdk)
+
 # create-qbi-app
 Quickly Create a Quick-BI custom component project. 
 ## Quick start
